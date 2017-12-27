@@ -1,0 +1,17 @@
+﻿Leann Bahi
+lbahi
+15-112 CC
+
+
+VidWiz - Term Project Design
+
+
+
+
+The problem I intend to solve with my Term Project is generating a polished video with a soundtrack from your selected video. This could be used for someone who would like to add sound to silent video footage, or for someone who would like to change the sound in a GoPro video. This also allow the user to merge videos to make a montage. 
+VidWiz will first ask the user to select videos from their hard drive. It will then analyse the video and extract its main characteristics using colorAnalysis4.py and motionAnalysis6.py. colorAnalysis4 analysis the colors from the video, returning the information to the main program. Using threading, at the same time motion Analysis6 analysis the motion in the video, returning the information to the main program. The main program uses these characteristics to generate a matching sound track for the video. The user is given the opportunity to modify these characteristics to their liking. The video and soundtrack are then merged and saved to the user’s folders.
+There are a couple user interfaces in VidWiz. Each interface has a Help and Home button to allow the user to view the Help screen or go back to the Home page at anytime. 
+The Home page is where the user uploads their videos. Their is a brief description, and an upload button. I kept this interface simple because it didn’t need anything more than an upload button. If the brief description is not enough information, the user can press the Help button to get more information.
+The loading screen is a simple screen with “Analysing…” drawn onto the canvas. I also added an image to make the interface more visually interesting.
+Then there is the characteristics interface. This interface shows the user the characteristics that were found in the video. First there is a graph showing the motion over time. The user can modify this graph by pressing on the points. When a point is pressed, the frame corresponding to that part in the video is drawn on the right hand side of the screen. This allows the user to know what part of the video they are modifying the motion for. Below the graph, the main color types are shown. The user can also press on these to modify the color characteristics. Finally, at the bottom of the interface, there is a visual representation of the tags going to be used to generate the music. When the characteristics of the video are modified, the tag being selected is updated to reflect the changes made. This allows the user to know what the effect of the changes being made to the characteristics have on the tags that will generate the music. In the bottom right corner, there is a generate music button which starts the process of generating the music and merging the audio with the video.
+Finally, the final screen informs the user that the video montage has been saved to his folders. There is a button in the middle of the screen that allows the user to directly open the folder from the interface.
